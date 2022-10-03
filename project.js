@@ -1,10 +1,6 @@
 const prom = new Promise((resolve,reject)=>{
-    let x = 10;
-    if(x>5){
-        resolve('success');
-    }else{
-        reject('failure')
-    }
+    resolve('success')
+    reject('failure')
 })
 
 prom.then((val)=>{
