@@ -1,6 +1,9 @@
 const prom = new Promise((resolve,reject)=>{
-    resolve('success')
-    reject('failure')
+    try {
+        resolve('success')
+    } catch {
+        reject('failure')
+    }
 })
 
 prom.then((val)=>{
